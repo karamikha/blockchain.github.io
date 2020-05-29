@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>Дополнительно о Blockchain</title>
+    <link rel="stylesheet" href="../CSS/library_style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
+    <script>
+        $(document).ready(function() {
+            $("main a").click(function() {
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                $("body,html").animate({
+                    scrollTop: destination
+                }, 500);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header id="up">
+        <div class="header_container">
+            <img src="../img/blockchain.jpeg" class="headerimg">
+            <nav>
+                <ul type="none">
+                    <li class="fah"><a href="../index.html">История</a></li>
+                    <li class="fah"><a href="job.html">Устройство работы</a></li>
+                    <li class="fah"><a href="areas.html">Области применения</a></li>
+                    <li><a href="#" class="nowopen">Библиотека</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Библиотека</h1>
+        </div>
+        <section>
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ttEkY4Owd1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EOsb5mWDbLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <a href="https://www.binance.vision/ru/blockchain/history-of-blockchain" class="link">История Blockchain</a>
+                <a href="https://m.habr.com/ru/company/wirex/blog/397999/" class="link">20 областей применения Блокчейн вне финансовых сервисов, ч. 1</a>
+                <a href="https://vas3k.ru/blog/blockchain/" class="link">Блокчейн изнутри: как устроен биткоин</a>
+                <a href="https://incrussia.ru/understand/polnyj-slovar-blokchejna/" class="link">Полный словарь блокчейна</a>
+                <a href="https://101blockchains.com/ru/%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%B1%D0%BB%D0%BE%D0%BA%D1%87%D0%B5%D0%B9%D0%BD%D0%B0/" class="link">Шесть ключевых особенностей блокчейна, о которых вам нужно знать!</a>
+            </div>
+        </section>
+        <a href="#up" class="but"></a>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© Карачурин Михаил, 2020</p>
+            <div class="cont">
+                <p>Контакты:</p>
+                <div class="soc">
+                    <a href="https://www.instagram.com/kara_mikha/" target="_blank"><img src="../img/instagram.jpg" alt="Instagram" class="inst"></a>
+                    <a href="https://vk.com/id420180320" target="_blank"><img src="../img/vk.png" alt="VK" class="vk"></a>
+                </div>
+
+            </div>
+            <p>mikha2901@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

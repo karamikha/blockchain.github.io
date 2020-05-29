@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>История Blockchain</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
+    <script>
+        $(document).ready(function() {
+            $("main a").click(function() {
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                $("body,html").animate({
+                    scrollTop: destination
+                }, 500);
+            });
+        });
+
+    </script>
+
+
+</head>
+
+<body>
+    <header id="up">
+        <div class="header_container">
+            <img src="img/blockchain.jpeg" class="headerimg">
+            <nav>
+                <ul type="none">
+                    <li class="fah"><a href="#" class="nowopen">История</a></li>
+                    <li class="fah"><a href="pages/job.html">Устройство работы</a></li>
+                    <li class="fah"><a href="pages/areas.html">Области применения</a></li>
+                    <li><a href="pages/library.html">Библиотека</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>История</h1>
+        </div>
+        <section>
+            <div class="container">
+                <p class="pwi">Впервые технология blockchain была описана еще в 1991 году, когда ученые-исследователи Стюарт Хабер и У. Скотт Шторнетт внедрили вычислительно-практическое решение для цифровых документов с штампом времени, чтобы они не могли подделаться. Система использовала криптографически закрепленную цепочку блоков, для хранения документов с отметкой времени.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <img src="img/bitcoin%20image.jpg" class="bitcoin">
+                <p class="pb">До 2008 года технология не привлекала большого внимания, пока программист с псевдонимом Сатоши Накамото не решил некоторые её технические проблемы и не построил с помощью блокчейна платёжную систему - Bitcoin.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+
+                <p class="pe">В 2013 году, Виталик Бутерин заявил, что биткоину нужен скриптовый язык для создания рассредоточенных приложений. Не получив согласия от сообщества, программист приступил к разработке вычислительной платформы на основе блокчейн, Ethereum, показавшая скриптовую функциональность, называемую смарт-контрактами.</p>
+                <img src="img/ethereum%20image.jpg" class="ethereum">
+            </div>
+        </section>
+        <a href="#up" class="but"></a>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© Карачурин Михаил, 2020</p>
+            <div class="cont">
+                <p>Контакты:</p>
+                <div class="soc">
+                    <a href="https://www.instagram.com/kara_mikha/" target="_blank"><img src="img/instagram.jpg" alt="Instagram" class="inst"></a>
+                    <a href="https://vk.com/id420180320" target="_blank"><img src="img/vk.png" alt="VK" class="vk"></a>
+                </div>
+
+            </div>
+            <p>mikha2901@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

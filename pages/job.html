@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>Устройство Blockchain</title>
+    <link rel="stylesheet" href="../CSS/job_style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
+    <script>
+        $(document).ready(function() {
+            $("main a").click(function() {
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                $("body,html").animate({
+                    scrollTop: destination
+                }, 500);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="up">
+        <div class="header_container">
+            <img src="../img/blockchain.jpeg" class="headerimg">
+            <nav>
+                <ul type="none">
+                    <li class="fah"><a href="../index.html">История</a></li>
+                    <li class="fah"><a href="#" class="nowopen">Устройство работы</a></li>
+                    <li class="fah"><a href="areas.html">Области применения</a></li>
+                    <li><a href="library.html">Библиотека</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container_h">
+            <h1>Устройство работы</h1>
+        </div>
+        <section>
+            <div class="container">
+                <div class="group">
+                    <p class="label">Genesis блок</p>
+                    <div class="block gen_block">
+                        <p class="hesh">хэш: A4C5</p>
+                        <p class="hesh">пред. хэш: 0000</p>
+                    </div>
+                    <div class="first info">
+                        <p class="description">Genesis блок не указывает ни на какой другой, он начинает цепочку.</p>
+                        <p class="description">Блок содержит какую-либо информацию и свой хэш</p>
+                    </div>
+                </div>
+                <img src="../img/chain.png" width="100px" height="50px" class="chain">
+                <div class="group">
+                   <p class="label">Обычный блок цепи</p>
+                    <div class="block second_block">
+                        <p class="hesh">хэш: 7680</p>
+                        <p class="hesh">пред. хэш: A4C5</p>
+                    </div>
+                    <div class="second info">
+                        <p class="description">Блок содержит какую-либо информацию, свой хэш и хэш предыдущего блока.</p>
+                        <p class="description">Благодаря наличию хэша предыдущего блока образуется цепочка. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© Карачурин Михаил, 2020</p>
+            <div class="cont">
+                <p>Контакты:</p>
+                <div class="soc">
+                    <a href="https://www.instagram.com/kara_mikha/" target="_blank"><img src="../img/instagram.jpg" alt="Instagram" class="inst"></a>
+                    <a href="https://vk.com/id420180320" target="_blank"><img src="../img/vk.png" alt="VK" class="vk"></a>
+                </div>
+
+            </div>
+            <p>mikha2901@gmail.com</p>
+        </div>
+    </footer>
+</body></html>
